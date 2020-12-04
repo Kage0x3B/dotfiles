@@ -191,6 +191,7 @@ exec --no-startup-id nitrogen --restore; sleep 1; picom --config ~/.config/picom
 exec_always --no-startup-id /usr/bin/light-locker
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+exec_always --no-startup-ip /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 # exec_always --no-startup-id /usr/bin/chromium --no-startup-window
 
 client.focused #84a18e #285577 #ffffff #2e9ef4 #84a18e
